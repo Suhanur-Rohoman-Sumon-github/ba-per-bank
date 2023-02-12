@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>baper bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header class="">
+        <h1 class=" text-center text-4xl mt-5 font-bold text-blue-700 ">baper sompod kew hat diba na</h1>
+    </header>
+    <main>
+        <section class="mt-16">
+            <div class="grid lg:grid-cols-3 w-9/12 gap-4 mx-auto mt-10">
+                <div class=" bg-gray-400 px-4 py-8 text-white font-bold rounded-lg box drop-shadow-2xl ">
+                    <h1 class="text-3xl "> deposit</h1>
+                    <h2 class="text-2xl" >$<span id="deposit-amount">00</span></h2>
+                </div>
+                <div class=" bg-orange-500 px-4 py-8 text-white font-bold  rounded-lg drop-shadow-2xl">
+                    <h1 class="text-3xl ">withdrw</h1>
+                    <h2 class="text-2xl">$<span id="withdrw-amount">00</span></h2>
+                </div>
+                <div class=" bg-red-400 px-4 py-8 text-white font-bold  rounded-lg drop-shadow-2xl">
+                    <h1 class="text-3xl "> main balance</h1>
+                    <h2 class="text-2xl">$<span id="total-amount">5000</span></h2>
+                </div>
+            </div>
+        </section>
+        <section class="mt-16">
+            <div class="grid lg:grid-cols-2 w-9/12 gap-4 mx-auto mt-10">
+                <div class=" bg-orange-300 p-8 rounded-lg  drop-shadow-2xl">
+                    <h1 class="text-3xl text-white">deposit now</h1>
+                    <input class="block py-2 my-4 pl-2 w-9/12 " id="deposit-field" type=" text" placeholder="deposit any amaunt">
+                    <button class="bg-red-500 px-4 py-2 rounded-lg hover:bg-slate-700 text-white " id="new-deposit">deposit</button>
+                </div>
+                <div class=" bg-orange-700 px-4 py-8 rounded-lg  drop-shadow-2xl">
+                    <h1 class="text-3xl text-white">withdrw now</h1>
+                    <input  class="block py-2 my-4 pl-2 w-9/12 " id="withdraw-field" type=" text" placeholder="withdrw any amaunt">
+                    <button class="bg-red-500 px-4 py-2 rounded-lg hover:bg-slate-700  text-white " id="new-withdrw">withdrw</button>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <script src="assests/js/deposit.js"></script>
+    <script src="assests/js/withdrw.js"></script>
+</body>
+
+</html>
